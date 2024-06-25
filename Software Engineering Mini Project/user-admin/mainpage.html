@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="mainpage.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById(id);
+            if (answer.style.display === "none") {
+                answer.style.display = "block";
+            } else {
+                answer.style.display = "none";
+            }
+        }
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <div class="d-flex flex-row">
+          <div >
+            <img
+            src="/images/logo.jpg"
+            class="food-munch-logo"/>
+          </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link active" id="navItem1" href="#wcuSection">
+              Home
+              <span class="sr-only">(current)</span>
+            </a>
+            <a class="nav-link" href="#aboutus" id="navItem2">About Us</a>
+            <a class="nav-link" href="#faqs" id="navItem3">FAQs</a>
+            <a class="nav-link" href="#contactus" id="navItem4">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="banner-section-bg-container d-flex justify-content-center flex-column mb-5" id="wcuSection">
+      <div class="text-center">
+        <h1 class="banner-heading mb-3">Envisioning Environment Change</h1>
+        <p class="banner-caption mb-4">For a greener future</p>
+        <a href = "user-admin.html"><button class="custom-button">Login</button></a>
+        <a href = "/login-signup/signup.html"><button class="custom-outline-button">register</button></a>
+      </div>
+    </div>
+
+    <div class="about-container mb-5" id = "aboutus">
+        <div>
+            <h1>About Us</h1>
+            <p class="para">Our website is a tool for improving decision-making processes as societies rely more and more on digital solutions. 
+                It ensures that climate change-related data is reliable and in error-free manner. This website can be used by researchers, scientists,
+                government agencies, policymakers, environmental organizations, the general public, agriculture organizations, emergency and 
+                disaster management, and others to make insightful decisions.</p>
+        </div>
+
+    </div>
+    
+    <div class="faq-container mb-5" id = "faqs">
+        <div class="container">
+            <div class="left-panel">
+                <h1 class="title">Frequently Asked Questions</h1>
+                <p class="tagline">Find answers to common questions here!</p>
+                <img src="/images/faqs_image.jpg" alt="Image description" width="350" height="300">
+            </div>
+            <div class="right-panel">
+                <div class="faq-item">
+                    <h2 class="question" onclick="toggleAnswer('answer1')">Question 1: What is the purpose of this website?
+                    </h2>
+                    <div id="answer1" class="answer">
+                        <p>This website aims to provide a platform for users to access and analyze climate change data, fostering awareness and offering valuable insights into environmental trends.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h2 class="question" onclick="toggleAnswer('answer2')">Question 2: How do I register for an account?</h2>
+                    <div id="answer2" class="answer">
+                        <p>Simply follow the registration instructions provided on the website to access additional features and personalize your experience.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h2 class="question" onclick="toggleAnswer('answer3')">Question 3: What parameters can I monitor and analyze on this website?
+                    </h2>
+                    <div id="answer3" class="answer">
+                        <p>You can monitor various climate parameters like temperature, humidity, precipitation, etc
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h2 class="question" onclick="toggleAnswer('answer4')">Question 4: How do I visualize climate data on the website?
+                    </h2>
+                    <div id="answer4" class="answer">
+                        <p>Visualizing data involves selecting parameters, choosing visualization options, and interpreting the displayed data through charts, graphs, maps, etc.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h2 class="question" onclick="toggleAnswer('answer5')">Question 5: Can I customize the time range for data analysis?</h2>
+                    <div id="answer5" class="answer">
+                        <p>Yes, users can specify the time range (e.g., year, month) to analyze climate data and focus on specific periods of interest.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h2 class="question" onclick="toggleAnswer('answer6')">Question 6: How frequently is the data updated on the website?
+                    </h2>
+                    <div id="answer6" class="answer">
+                        <p>The data is regularly updated to ensure users have access to timely information</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h2 class="question" onclick="toggleAnswer('answer7')">Question 7: How can I contribute data to the dataset as an admin?
+                    </h2>
+                    <div id="answer7" class="answer">
+                        <p> Admins can transparently and accurately add new data to the dataset using the provided process.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h2 class="question" onclick="toggleAnswer('answer8')">Question 8: Is my personal information secure on this website?</h2>
+                    <div id="answer8" class="answer">
+                        <p> Yes, we implement robust security measures to protect your personal information and ensure data privacy.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h2 class="question" onclick="toggleAnswer('answer9')">Question 9: Who can I contact for technical support or additional assistance?</h2>
+                    <div id="answer9" class="answer">
+                        <p>You can find contact information or links to support resources on the website for technical assistance or further guidance.</p>
+                    </div>
+                </div>
+                <!-- Add more FAQ items as needed -->
+            </div>
+        </div>
+    </div>
+    
+
+    <div class = "contactus-container mb-5" id = "contactus">
+        <h1>Contact Us</h1>
+    
+    <!-- Contact form -->
+    <form action="https://api.web3forms.com/submit" method="POST"> <!-- Updated action attribute -->
+        <input type="hidden" name="access_key" value="9df8be2d-b0b7-4833-99fe-b133f54ed336">
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" id="name" name="name" required>
+        <br>
+        
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="email" name="email" required>
+        <br>
+        
+        <label for="message">Message:</label>
+        <br>
+        <textarea id="message" name="message" required></textarea>
+        <br>
+        <div class="form-group">
+            <input type="submit" value="Submit" style="margin: 0 auto;">
+        </div>
+    </form>
+
+    <!-- Text for assurance -->
+    <p>We assure you of a fast response as soon as possible.</p>
+
+    <!-- Contact information -->
+    <p class="contact-info">For any further assistance, please contact us at <a href="mailto:climatepulse497@gmail.com">climatepulse497@gmail.com</a>.</p>
+    </div>
+
+    <div class="footer-section pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <img
+              src="/images/logo.jpg"
+              class="food-munch-logo"
+            />
+            <p class="footer-section-address">
+                Contact Us on
+              </p>
+            <h1 class="footer-section-mail-id">climatepulse497@gmail.com</h1>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+.main-container{
+    display: flex;
+    align-items: center;
+    background-image: url('/images/adminloginbackground.jpg');
+    background-size: cover; 
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.card{
+    background-color: transparent;
+    height: 500px;
+    width: 500px;
+    padding: 25px;
+
+}
+
+.heading{
+    font-family: "Roboto";
+    font-size: 56px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+.error-message {
+    color: #dc3545;
+    font-family: "Roboto";
+    font-size: 14px;
+  }
+
+.para{
+    font-family: "Roboto";
+    font-size: 18px;
+}
+
+.button{
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    background-color: transparent;
+    color: black;
+    font-family: "Roboto";
+    font-size: 18px;
+    width: 120px;
+    height: 35px;
+    text-align: center;
+    margin: 12px;
+    text-decoration: underline;
+}
+
+.link{
+    color: blue;
+    text-decoration: underline;
+}
+
+.signup-message{
+    margin: 10px;
+    text-align: center;
+}
